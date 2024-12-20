@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коллекция - Hilrein</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">Hilrein</div>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="items.html">Коллекция</a></li>
+            <li><a href="about.html">О нас</a></li>
+        </ul>
+    </nav>
+
+    <section class="collection-hero">
+        <h1 data-aos="fade-up">Коллекция</h1>
+    </section>
+
+    <section class="collection-container">
+        <div class="category-nav" data-aos="fade-up">
+            <a href="#" data-category="all" class="active">Все</a>
+            <a href="#" data-category="sneakers">Кроссовки</a>
+            <a href="#" data-category="hoodies">Худи</a>
+            <a href="#" data-category="tshirts">Футболки</a>
+            <a href="#" data-category="pants">Штаны</a>
+        </div>
+
+        <div class="products" id="products">
+            <!-- Товары будут добавляться через JavaScript -->
+        </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
