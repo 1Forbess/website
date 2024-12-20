@@ -2,8 +2,8 @@ const products = {
     sneakers: [
         {
             id: 1,
-            name: "Luxury Sneakers",
-            price: 1299,
+            name: "Nike Dunk Low Retro",
+            price: "86,97",
             description: "Эксклюзивные кроссовки ручной работы",
             image: "images/sneakers1.jpg",
             details: {
@@ -85,3 +85,13 @@ function showProductDetails(product) {
     
     modal.style.display = "block";
 }
+
+// Закрытие модального окна
+document.getElementById('modal').addEventListener('click', () => {
+    document.getElementById('modal').style.display = 'none';
+});
+
+// Отображаем товары при загрузке
+document.addEventListener('DOMContentLoaded', () => {
+    displayProducts('all'); // Отображаем все товары
+});
